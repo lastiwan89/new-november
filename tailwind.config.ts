@@ -17,6 +17,13 @@ const config: Config = {
       secsacramgreen: "#012f34",
       secdarkgreen: "#002529",
     },
+    screens: {
+      sm: "320px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       backgroundImage: {
         quote: "url('./icon-quotes.svg')",
