@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  /* Typography */
+  .medium-13 {
+    @apply text-[13px] font-[500];
+  }
+  .semi-bold-15 {
+    @apply text-[15px] font-[600];
+  }
+  .semi-bold-18 {
+    @apply text-[18px] font-[600];
+  }
+  .bold-18 {
+    @apply text-[18px] font-[700];
+  }
+  .bold-48 {
+    @apply text-[48px] font-[700];
+  }
+  .bold-64 {
+    @apply text-[64px] font-[700];
+  }
+  .bold-100 {
+    @apply text-[100px] font-[700];
+  }
+  /* Button */
+  .btn-nav {
+    @apply bg-primgreen text-primwhite border-primwhite border-2 hover:bg-primcoral hover:border-primcoral ml-auto;
+  }
+  .btn-footer {
+    @apply bg-primcoral text-secsacramgreen border-2 border-secsacramgreen hover:bg-secsacramgreen hover:text-primwhite;
+  }
+}
