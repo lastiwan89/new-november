@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { NAVBAR } from "@/constant";
 import Button from "./Button";
+import Burger from "./Hamburger";
 
 export default function Navbar() {
   return (
@@ -15,9 +16,10 @@ export default function Navbar() {
             {nav.label}
           </Link>
         ))}
-        <Button type="btn-nav" />
+        <Button type="btn-mobile" />
       </ul>
       <Button type="btn-nav" />
+      <Burger />
     </nav>
   );
 }

@@ -41,7 +41,10 @@
   }
   /* Button */
   .btn-nav {
-    @apply bg-primgreen text-primwhite border-primwhite border-2 hover:bg-primcoral hover:border-primcoral ml-auto;
+    @apply bg-primgreen text-primwhite sm:hidden border-primwhite border-2 hover:bg-primcoral hover:border-primcoral ml-auto;
+  }
+  .btn-mobile {
+    @apply bg-primgreen text-primwhite md:hidden border-primwhite border-2 hover:bg-primcoral hover:border-primcoral ml-auto;
   }
   .btn-footer {
     @apply bg-primcoral text-secsacramgreen border-2 border-secsacramgreen hover:bg-secsacramgreen hover:text-primwhite;
